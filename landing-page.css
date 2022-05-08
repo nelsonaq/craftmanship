@@ -17,7 +17,7 @@ body {
 
 .nav {
   background-color: #ffffff;
-  padding: 1rem;
+  padding: 0.75rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,7 +30,7 @@ body {
 
 .logo {
   font-family: "Koulen", cursive;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   letter-spacing: 0.125rem;
 }
 
@@ -121,6 +121,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .services-container h2 {
@@ -129,8 +130,8 @@ body {
 
 .service-cards {
   width: 100%;
-  overflow-x: hidden;
   display: flex;
+  transition: all 0.4s ease-in-out;
 }
 
 .service-cards img {
@@ -138,20 +139,21 @@ body {
 }
 
 .btn-slide {
-  color: #e6e6e6;
-  opacity: 0.5;
+  color: #ffffff;
+  opacity: 0.8;
   background-color: transparent;
   border: none;
+}
+
+.btn-slide-left {
+  display: none;
+  position: absolute;
+  bottom: 8.5rem;
+  left: 0.5rem;
 }
 
 .btn-slide-right {
   position: absolute;
   bottom: 8.5rem;
-  left: 0;
-}
-
-.btn-slide-left {
-  position: absolute;
-  bottom: 8.5rem;
-  right: 0;
+  right: 0.5rem;
 }
