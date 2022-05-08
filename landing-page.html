@@ -17,6 +17,7 @@
       src="https://kit.fontawesome.com/b2eae21fde.js"
       crossorigin="anonymous"
     ></script>
+    <script defer src="landing-page.js"></script>
   </head>
   <body>
     <div class="main-content-wrapper">
@@ -24,17 +25,34 @@
         <div class="hamburger">
           <img src="/images/logo-hamburger.png" alt="hamburger icon" />
         </div>
-        <div class="logo"><span>Craft</span>manship</div>
-        <button class="btn-join">Sign Up</button>
+        <div class="logo">
+          <a href="#"><span>Craft</span>manship</a>
+        </div>
+        <button class="btn-join">Sign In</button>
       </nav>
 
-      <section class="main-content-container">
+      <section class="introduction-container">
         <img class="main-image" src="/images/main-image.avif" alt="workplace" />
         <h1>Find the best and secure way to provide your services.</h1>
         <div class="find-btns">
-          <button class="find-btn work">Find Work</button>
-          <button class="find-btn service">Get a Service</button>
+          <button class="find-btn btn-work">Find Work</button>
+          <button class="find-btn btn-service">Find Services</button>
         </div>
+      </section>
+      <section class="services-container">
+        <h2>Popular Services Offered</h2>
+        <div class="service-cards">
+          <img src="/images/services/home-repair.avif" alt="" class="card" />
+          <img src="/images/services/driver.avif" alt="" class="card" />
+          <img src="/images/services/housekeeping.avif" alt="" class="card" />
+          <img src="/images/services/masseuse.avif" alt="" class="card" />
+        </div>
+        <button class="btn-slide btn-slide-right">
+          <i class="fa-solid fa fa-chevron-left fa-2x"></i>
+        </button>
+        <button class="btn-slide btn-slide-left">
+          <i class="fa-solid fa fa-chevron-right fa-2x"></i>
+        </button>
       </section>
     </div>
   </body>
