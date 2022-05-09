@@ -85,6 +85,7 @@ body {
   color: #ffffff;
   padding: 1.5rem;
   text-align: center;
+  font-weight: 400;
 }
 
 .find-btns {
@@ -101,40 +102,62 @@ body {
   font-size: 1.125rem;
   font-weight: 700;
   border-radius: 2rem;
+  color: #ffffff;
 }
 
 .btn-work {
-  color: #ffffff;
   background-color: #5c7aea;
   border: 0.125rem solid #5c7aea;
 }
 
 .btn-service {
-  color: #ffffff;
   border: 0.125rem solid #ffffff;
 }
 
 .services-container {
-  padding: 2rem 0rem;
   text-align: center;
   position: relative;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  overflow-x: hidden;
+  align-items: center;
+  flex-direction: column;
 }
 
 .services-container h2 {
-  padding-bottom: 1rem;
+  padding: 2rem 0;
 }
 
 .service-cards {
+  position: relative;
   width: 100%;
+  overflow: hidden;
+}
+
+.service-cards figure {
   display: flex;
+  width: 100%;
   transition: all 0.4s ease-in-out;
 }
 
-.service-cards img {
+.labels {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 400%;
+  display: flex;
+}
+
+.labels h3 {
+  padding: 0.5rem;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-shadow: 0 0 0.25rem black;
+}
+
+.service-cards figure img {
   width: 100%;
 }
 
@@ -143,17 +166,18 @@ body {
   opacity: 0.8;
   background-color: transparent;
   border: none;
+  position: relative;
 }
 
 .btn-slide-left {
   display: none;
   position: absolute;
-  bottom: 8.5rem;
-  left: 0.5rem;
+  top: 60%;
+  left: 0.25rem;
 }
 
 .btn-slide-right {
   position: absolute;
-  bottom: 8.5rem;
-  right: 0.5rem;
+  top: 60%;
+  right: 0.25rem;
 }

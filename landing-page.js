@@ -2,22 +2,21 @@
 
 const btnLeftImgSlider = document.querySelector(".btn-slide-left");
 const btnRightImgSlider = document.querySelector(".btn-slide-right");
-const serviceCards = document.querySelector(".service-cards");
+const serviceCardsFigure = document.querySelector(".service-cards figure");
+const labels = document.querySelector(".labels");
 
-let currentPosition = 0;
+let currentImgPosition = 0;
 const imgSlideRight = function () {
   btnLeftImgSlider.style.display = "block";
-  currentPosition += 100;
-  if (currentPosition === 300) btnRightImgSlider.style.display = "none";
-  console.log(currentPosition);
-  serviceCards.style.transform = `translateX(-${currentPosition}%)`;
+  currentImgPosition += 100;
+  if (currentImgPosition === 300) btnRightImgSlider.style.display = "none";
+  serviceCardsFigure.style.transform = `translateX(-${currentImgPosition}%)`;
 };
 const imgSlideLeft = function () {
   btnRightImgSlider.style.display = "block";
-  currentPosition -= 100;
-  if (currentPosition === 0) btnLeftImgSlider.style.display = "none";
-  console.log(currentPosition);
-  serviceCards.style.transform = `translateX(-${currentPosition}%)`;
+  currentImgPosition -= 100;
+  if (currentImgPosition === 0) btnLeftImgSlider.style.display = "none";
+  serviceCardsFigure.style.transform = `translateX(-${currentImgPosition}%)`;
 };
 btnRightImgSlider.addEventListener("click", imgSlideRight);
 btnLeftImgSlider.addEventListener("click", imgSlideLeft);
