@@ -25,7 +25,7 @@ body {
 
 .hamburger {
   cursor: pointer;
-  width: 4.75rem;
+  width: 4.5rem;
 }
 
 .logo {
@@ -147,7 +147,7 @@ body {
   display: flex;
 }
 
-.labels h3 {
+.labels a {
   padding: 0.5rem;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.2);
