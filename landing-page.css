@@ -10,6 +10,53 @@ body {
   margin: 0;
 }
 
+/* Animations */
+
+@keyframes services-slide {
+  /* 1st img */
+  0% {
+    transform: translateX(0%);
+  }
+  20% {
+    transform: translateX(0%);
+  }
+
+  /* 2nd img */
+  25% {
+    transform: translateX(-100%);
+  }
+  45% {
+    transform: translateX(-100%);
+  }
+
+  /* 3rd img */
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+
+  /* 4th img */
+  75% {
+    transform: translateX(-300%);
+  }
+
+  95% {
+    opacity: 1;
+    transform: translateX(-300%);
+  }
+
+  /* Ending Animation */
+  96% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0%);
+  }
+}
+
 .main-content-wrapper {
   justify-content: center;
   font-family: "Poppins", sans-serif;
@@ -142,79 +189,55 @@ body {
 
 .labels {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 1.5rem;
+  left: 1.5rem;
   width: 400%;
   display: flex;
 }
 
-.labels a {
-  padding: 0.5rem;
+.labels div {
+  text-align: left;
   color: #ffffff;
-  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 1;
   width: 100%;
-  font-size: 1.25rem;
-  font-weight: 400;
-  text-shadow: 0 0 0.25rem black;
+}
+
+.labels div h3 {
+  color: #ffffff;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.labels div p {
+  padding: 1rem 0;
+  width: 80%;
+  font-size: 0.875rem;
+}
+
+.labels div button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  background-color: #14279b;
+  border: 0.125rem solid #14279b;
+  border-radius: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 700;
 }
 
 .service-cards figure img {
+  filter: brightness(0.4);
   width: 100%;
 }
 
-@keyframes services-slide {
-  /* 1st img */
-  0% {
-    transform: translateX(0%);
-  }
-  20% {
-    transform: translateX(0%);
-  }
-
-  /* 2nd img */
-  25% {
-    transform: translateX(-100%);
-  }
-  45% {
-    transform: translateX(-100%);
-  }
-
-  /* 3rd img */
-  50% {
-    transform: translateX(-200%);
-  }
-  70% {
-    transform: translateX(-200%);
-  }
-
-  /* 4th img */
-  75% {
-    transform: translateX(-300%);
-  }
-
-  95% {
-    opacity: 1;
-    transform: translateX(-300%);
-  }
-
-  /* Ending Animation */
-  96% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-    transform: translateX(0%);
-  }
-}
-
-.services-container h3 {
+.services-container h4 {
   color: #3d56b2;
   width: 90%;
   font-size: 1.25rem;
   position: relative;
 }
 
-.services-container h3::after {
+.services-container h4::after {
   position: absolute;
   content: "";
   bottom: -20%;
