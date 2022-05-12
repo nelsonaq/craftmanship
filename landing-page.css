@@ -228,12 +228,15 @@ body {
 
 .labels div h3 {
   color: #ffffff;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   font-weight: 700;
+  text-shadow: 0 0 0.25rem #000000;
 }
 
 .labels div p {
-  padding: 1rem 0;
+  color: #e6e6e6;
+  text-shadow: 0 0 0.25rem #000000;
+  padding: 0.5rem 0 2.5rem 0;
   width: 80%;
   font-size: 0.875rem;
 }
