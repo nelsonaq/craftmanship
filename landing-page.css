@@ -198,14 +198,14 @@ body {
   padding: 2rem 0;
 }
 
-.service-cards {
+.services {
   padding-bottom: 1rem;
   position: relative;
   width: 100%;
   overflow: hidden;
 }
 
-.service-cards figure {
+.services figure {
   display: flex;
   width: 100%;
   animation: services-slide 10s ease-in-out infinite;
@@ -249,7 +249,7 @@ body {
   font-weight: 700;
 }
 
-.service-cards figure img {
+.services figure img {
   filter: brightness(0.4);
   width: 100%;
 }
