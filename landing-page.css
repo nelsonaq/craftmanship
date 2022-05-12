@@ -398,6 +398,8 @@ body {
   .introduction-container {
     flex-direction: row-reverse;
     padding-bottom: 0;
+    width: 90%;
+    margin: auto;
   }
 
   .main-image {
