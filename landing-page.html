@@ -28,15 +28,31 @@
         <div class="logo">
           <a href="#"><span>Craft</span>manship</a>
         </div>
-        <button class="btn-join">Sign In</button>
+        <form class="search">
+          <select name="browse" id="browse">
+            <option value="" selected disabled hidden>Browse</option>
+            <option value="volvo">Food and Beverage Services</option>
+            <option value="saab">Home Repair and Improvements</option>
+            <option value="opel">Tutorial Services</option>
+            <option value="audi">House Cleaning Services</option>
+          </select>
+          <button><img src="/images/search.png" alt=""></button>
+          <input type="search" autocomplete="off" placeholder="Find Shit" value="">
+        </form>
+        <div class="user-login">
+          <button class="btn-login">Log In</button>
+          <button class="btn-signup">Sign Up</button>
+        </div>
       </nav>
 
       <section class="introduction-container">
         <img class="main-image" src="/images/main-image.jpg" alt="workplace" />
-        <h1>Find the best and secure way to provide your services.</h1>
-        <div class="find-btns">
-          <button class="find-btn btn-work">Find Work</button>
-          <button class="find-btn btn-service">Find Services</button>
+        <div class="introduction">
+          <h1>Work with verified, exceptional talent, hand-vetted for stellar quality and service.</h1>
+          <div class="find-btns">
+            <button class="find-btn btn-work">Find Work</button>
+            <button class="find-btn btn-service">Find Services</button>
+          </div>
         </div>
       </section>
       <section class="services-container">
@@ -45,10 +61,6 @@
         <div class="service-cards">
           <figure>
             <div class="labels">
-              <!-- <a href="#">Home Repairs</a>
-              <a href="#">Service Drivers</a>
-              <a href="#">Housekeeping</a>
-              <a href="#">Massage</a> -->
               <div>
                 <h3>Home Repairs</h3>
                 <p>
