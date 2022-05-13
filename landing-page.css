@@ -132,9 +132,9 @@ body {
 }
 
 .btn-login {
-  color: var(--light-blue);
+  color: var(--primary-blue);
   background-color: transparent;
-  border: 0.125rem solid var(--light-blue);
+  border: 0.125rem solid var(--primary-blue);
 }
 
 .btn-signup {
@@ -185,13 +185,13 @@ body {
 }
 
 .btn-work {
-  color: var(--light-blue);
-  border: 0.125rem solid var(--light-blue);
+  color: var(--primary-blue);
+  border: 0.125rem solid var(--primary-blue);
 }
 
 .btn-service {
-  background-color: var(--light-blue);
-  border: 0.125rem solid var(--light-blue);
+  background-color: var(--primary-blue);
+  border: 0.125rem solid var(--primary-blue);
 }
 
 .services-container {
@@ -292,8 +292,8 @@ body {
   width: 12rem;
   padding: 0.5rem 0;
   color: white;
-  background-color: var(--light-blue);
-  border: 0.125rem solid var(--light-blue);
+  background-color: var(--primary-blue);
+  border: 0.125rem solid var(--primary-blue);
   border-radius: 2rem;
   font-size: 1.125rem;
   font-weight: 700;
@@ -438,8 +438,8 @@ body {
   .btn-signup {
     display: block;
     color: white;
-    background-color: var(--light-blue);
-    border: 0.125rem solid var(--light-blue);
+    background-color: var(--primary-blue);
+    border: 0.125rem solid var(--primary-blue);
   }
 
   .services-container h4 {
