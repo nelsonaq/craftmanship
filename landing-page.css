@@ -276,9 +276,10 @@ body {
 }
 
 .services-container h4 {
+  color: var(--primary-blue);
   width: 90%;
+  padding-top: 1rem;
   font-size: 1.25rem;
-  position: relative;
 }
 
 .services-container p {
@@ -346,6 +347,15 @@ body {
 
   .logo span::after {
     height: 2.1875rem;
+  }
+
+  .services-container h4 {
+    padding-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .services-container p {
+    font-size: 1.125rem;
   }
 
   .introduction h1 {
@@ -424,6 +434,14 @@ body {
     color: white;
     background-color: var(--light-blue);
     border: 0.125rem solid var(--light-blue);
+  }
+
+  .services-container h4 {
+    font-size: 2rem;
+  }
+
+  .services-container p {
+    font-size: 1.5rem;
   }
 
   .introduction-container {
