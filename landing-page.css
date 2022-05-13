@@ -466,6 +466,10 @@ body {
     width: 14rem;
   }
 
+  .services-container h2 {
+    font-size: 2.5rem;
+  }
+
   .services figure {
     max-height: 40rem;
   }
