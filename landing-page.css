@@ -8,7 +8,7 @@
   --dark-blue: #233863;
   --primary-blue: #2b468b;
   --secondary-blue: #3d56b2;
-  --light-blue: #5c7aea;
+  --light-blue: #488ac7;
   --dark-gray: #0c090a;
   --light-gray: #e6e6e6;
 }
@@ -261,7 +261,7 @@ body {
   cursor: pointer;
   padding: 0.5rem 2rem;
   color: var(--dark-gray);
-  background-color: var(--primary-blue);
+  background-color: var(--dark-blue);
   border: none;
   border-radius: 0.25rem;
   font-size: 1.125rem;
@@ -276,7 +276,7 @@ body {
 }
 
 .services-container h4 {
-  color: var(--primary-blue);
+  color: var(--dark-blue);
   width: 90%;
   padding-top: 1rem;
   font-size: 1.25rem;
