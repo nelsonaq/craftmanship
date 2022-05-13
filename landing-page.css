@@ -468,6 +468,10 @@ body {
     max-height: 40rem;
   }
 
+  .services figure img {
+    object-position: 0 30%;
+  }
+
   .labels {
     margin-left: 10rem;
   }
