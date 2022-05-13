@@ -202,6 +202,7 @@ body {
   padding-bottom: 1rem;
   position: relative;
   width: 100%;
+  max-height: 40rem;
   overflow: hidden;
 }
 
@@ -213,10 +214,13 @@ body {
 
 .labels {
   position: absolute;
-  top: 1.5rem;
-  left: 1.5rem;
+  top: 0;
+  left: 0;
   width: 400%;
+  height: 100%;
   display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
 }
 
 .labels div {
@@ -224,6 +228,9 @@ body {
   color: #ffffff;
   z-index: 1;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
 }
 
 .labels div h3 {
@@ -237,7 +244,7 @@ body {
   color: #e6e6e6;
   text-shadow: 0 0 0.25rem #000000;
   padding: 0.5rem 0 2.5rem 0;
-  width: 80%;
+  width: 70%;
   font-size: 0.875rem;
 }
 
@@ -255,6 +262,7 @@ body {
 .services figure img {
   filter: brightness(0.4);
   width: 100%;
+  object-position: center;
 }
 
 .services-container h4 {
