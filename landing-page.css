@@ -4,6 +4,15 @@
   margin: 0;
 }
 
+:root {
+  --dark-blue: #14279b;
+  --primary-blue: #2554c7;
+  --secondary-blue: #3d56b2;
+  --light-blue: #5c7aea;
+  --dark-gray: #0c090a;
+  --light-gray: #e6e6e6;
+}
+
 body {
   box-sizing: border-box;
   padding: 0;
@@ -62,7 +71,7 @@ body {
 }
 
 .nav {
-  background-color: #ffffff;
+  background-color: white;
   padding: 0.75rem;
   display: flex;
   justify-content: space-between;
@@ -89,7 +98,7 @@ body {
   height: 1.75rem;
   position: relative;
   z-index: 1;
-  color: #ffffff;
+  color: white;
 }
 
 .logo span::after {
@@ -101,7 +110,7 @@ body {
   height: 2rem;
   width: 100%;
   transform: skewX(-10deg);
-  background-color: #14279b;
+  background-color: var(--dark-blue);
 }
 
 .search {
@@ -123,9 +132,9 @@ body {
 }
 
 .btn-login {
-  color: #5c7aea;
+  color: var(--light-blue);
   background-color: transparent;
-  border: 0.125rem solid #5c7aea;
+  border: 0.125rem solid var(--light-blue);
 }
 
 .btn-signup {
@@ -172,17 +181,17 @@ body {
   font-size: 1.125rem;
   font-weight: 700;
   border-radius: 2rem;
-  color: #ffffff;
+  color: white;
 }
 
 .btn-work {
-  color: #3d56b2;
-  border: 0.125rem solid #3d56b2;
+  color: var(--secondary-blue);
+  border: 0.125rem solid var(--secondary-blue);
 }
 
 .btn-service {
-  background-color: #5c7aea;
-  border: 0.125rem solid #5c7aea;
+  background-color: var(--light-blue);
+  border: 0.125rem solid var(--light-blue);
 }
 
 .services-container {
@@ -226,7 +235,7 @@ body {
 
 .labels div {
   text-align: left;
-  color: #ffffff;
+  color: white;
   z-index: 1;
   width: 100%;
   display: flex;
@@ -235,25 +244,25 @@ body {
 }
 
 .labels div h3 {
-  color: #ffffff;
+  color: white;
   font-size: 1.75rem;
   font-weight: 700;
-  text-shadow: 0 0 0.125rem #000000;
+  text-shadow: 0 0 0.125rem black;
 }
 
 .labels div p {
-  color: #ffffff;
+  color: white;
   padding: 1rem 0 3rem 0;
   width: 70%;
   font-size: 1rem;
-  text-shadow: 0 0 0.125rem #000000;
+  text-shadow: 0 0 0.125rem black;
 }
 
 .labels div button {
   cursor: pointer;
   padding: 0.5rem 2rem;
-  color: #0c090a;
-  background-color: #2554c7;
+  color: var(--dark-gray);
+  background-color: var(--primary-blue);
   border: none;
   border-radius: 0.25rem;
   font-size: 1.125rem;
@@ -278,7 +287,7 @@ body {
   content: "";
   bottom: -20%;
   right: 5%;
-  background-color: #e6e6e6;
+  background-color: var(--light-gray);
   height: 0.125rem;
   width: 90%;
 }
@@ -292,8 +301,8 @@ body {
   cursor: pointer;
   padding: 0.5rem 1.25rem;
   background-color: transparent;
-  color: #5c7aea;
-  border: 0.125rem solid #5c7aea;
+  color: var(--light-blue);
+  border: 0.125rem solid var(--light-blue);
   border-radius: 0.5rem;
   font-size: 1.125rem;
   font-weight: 700;
@@ -325,7 +334,7 @@ body {
   .search button {
     background: transparent;
     width: 3rem;
-    border: 1px solid #e6e6e6;
+    border: 1px solid var(--light-gray);
     border-right: none;
     border-top-left-radius: 2rem;
     border-bottom-left-radius: 2rem;
@@ -334,7 +343,7 @@ body {
   .search input {
     width: 15rem;
     height: 2.5rem;
-    border: 1px solid #e6e6e6;
+    border: 1px solid var(--light-gray);
     outline: none;
     border-left: none;
     border-top-right-radius: 2rem;
@@ -421,9 +430,9 @@ body {
 
   .btn-signup {
     display: block;
-    color: #ffffff;
-    background-color: #5c7aea;
-    border: 0.125rem solid #5c7aea;
+    color: white;
+    background-color: var(--light-blue);
+    border: 0.125rem solid var(--light-blue);
   }
 
   .introduction-container {
