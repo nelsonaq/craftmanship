@@ -471,6 +471,7 @@ body {
   .labels {
     margin-left: 10rem;
   }
+
   .labels div h3 {
     font-size: 3rem;
   }
@@ -484,5 +485,15 @@ body {
   .labels div button {
     padding: 0.75rem 2.5rem;
     font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 119.9375rem) {
+  .services figure img {
+    object-position: 0 30%;
+  }
+
+  .labels {
+    margin-left: 22rem;
   }
 }
