@@ -76,7 +76,7 @@ body {
 
 .logo {
   font-family: "Koulen", cursive;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   letter-spacing: 0.125rem;
 }
 
@@ -96,9 +96,9 @@ body {
   content: "";
   position: absolute;
   z-index: -1;
-  top: 0.125rem;
+  top: 0rem;
   left: 0;
-  height: 2.25rem;
+  height: 2rem;
   width: 100%;
   transform: skewX(-10deg);
   background-color: #14279b;
@@ -337,7 +337,7 @@ body {
   }
 
   .logo span::after {
-    height: 2rem;
+    height: 2.1875rem;
   }
 
   .introduction h1 {
@@ -364,7 +364,7 @@ body {
   }
 
   .logo span::after {
-    height: 2.75rem;
+    height: 3rem;
   }
 
   .search {
