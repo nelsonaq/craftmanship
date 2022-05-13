@@ -6,7 +6,7 @@
 
 :root {
   --dark-blue: #14279b;
-  --primary-blue: #2554c7;
+  --primary-blue: #2b468b;
   --secondary-blue: #3d56b2;
   --light-blue: #5c7aea;
   --dark-gray: #0c090a;
@@ -185,8 +185,8 @@ body {
 }
 
 .btn-work {
-  color: var(--secondary-blue);
-  border: 0.125rem solid var(--secondary-blue);
+  color: var(--light-blue);
+  border: 0.125rem solid var(--light-blue);
 }
 
 .btn-service {
