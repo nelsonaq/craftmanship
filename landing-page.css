@@ -21,190 +21,127 @@ body {
 
 /* Animations */
 
-@keyframes services-slide {
-  /* Opening animation*/
+@keyframes text-slide {
+  /* 1st slide */
   0% {
-    opacity: 0;
-    transform: translateX(20%);
+    opacity: 1;
+    transform: translateX(0);
   }
 
-  /* 1st slide */
-  2% {
+  20% {
     opacity: 1;
     transform: translateX(0);
   }
 
   22% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  24% {
     opacity: 0;
     transform: translateX(0);
   }
 
-  25% {
+  23% {
     opacity: 0;
     transform: translateX(-80%);
   }
 
   /* 2nd slide */
-  27% {
+  25% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+
+  45% {
     opacity: 1;
     transform: translateX(-100%);
   }
 
   47% {
-    opacity: 1;
-    transform: translateX(-100%);
-  }
-
-  49% {
     opacity: 0;
     transform: translateX(-100%);
   }
 
-  50% {
+  48% {
     opacity: 0;
     transform: translateX(-180%);
   }
 
-  /* 3rd slid */
-  52% {
+  /* 3rd slide */
+  50% {
+    opacity: 1;
+    transform: translateX(-200%);
+  }
+
+  70% {
     opacity: 1;
     transform: translateX(-200%);
   }
 
   72% {
-    opacity: 1;
-    transform: translateX(-200%);
-  }
-
-  74% {
     opacity: 0;
     transform: translateX(-200%);
   }
 
-  75% {
+  73% {
     opacity: 0;
     transform: translateX(-280%);
   }
 
-  /* 4th img */
-  77% {
+  /* 4th slide */
+  75% {
+    opacity: 1;
+    transform: translateX(-300%);
+  }
+
+  95% {
     opacity: 1;
     transform: translateX(-300%);
   }
 
   97% {
-    opacity: 1;
+    opacity: 0;
     transform: translateX(-300%);
   }
 
-  /* Closing Animation */
-  99% {
+  98% {
     opacity: 0;
-    transform: translateX(-320%);
+    transform: translateX(20%);
   }
 
   100% {
-    opacity: 0;
+    opacity: 1;
     transform: translateX(0);
   }
 }
-
-@keyframes services-fade {
-  /* 1st img */
+@keyframes image-fade-in-out {
   0% {
-    opacity: 0;
-    transform: translateX(0);
+    background-image: url(/images/services/home-repair.jpg);
+  }
+  20% {
+    background-image: url(/images/services/home-repair.jpg);
   }
 
-  2% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  22% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-
-  24% {
-    opacity: 0;
-    transform: translateX(0);
-  }
-
-  /* 2nd img */
   25% {
-    opacity: 0;
-    transform: translateX(-100%);
+    background-image: url(/images/services/driver.jpg);
+  }
+  45% {
+    background-image: url(/images/services/driver.jpg);
   }
 
-  27% {
-    opacity: 1;
-    transform: translateX(-100%);
-  }
-
-  47% {
-    opacity: 1;
-    transform: translateX(-100%);
-  }
-
-  49% {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-
-  /* 3rd img */
   50% {
-    opacity: 0;
-    transform: translateX(-200%);
+    background-image: url(/images/services/housekeeping.jpg);
+  }
+  70% {
+    background-image: url(/images/services/housekeeping.jpg);
   }
 
-  52% {
-    opacity: 1;
-    transform: translateX(-200%);
-  }
-
-  72% {
-    opacity: 1;
-    transform: translateX(-200%);
-  }
-
-  74% {
-    opacity: 0;
-    transform: translateX(-200%);
-  }
-
-  /* 4th img */
   75% {
-    opacity: 0;
-    transform: translateX(-300%);
+    background-image: url(/images/services/massage.jpg);
   }
-
-  77% {
-    /* filter: brightness(0.4); */
-    opacity: 1;
-    transform: translateX(-300%);
-  }
-
-  97% {
-    /* filter: brightness(0.4); */
-    opacity: 1;
-    transform: translateX(-300%);
-  }
-
-  /* Closing Animation */
-  99% {
-    opacity: 0;
-    transform: translateX(-300%);
+  95% {
+    background-image: url(/images/services/massage.jpg);
   }
 
   100% {
-    opacity: 0;
-    transform: translateX(0);
+    background-image: url(/images/services/home-repair.jpg);
   }
 }
 
@@ -360,12 +297,15 @@ body {
   overflow: hidden;
 }
 
-.services figure {
-  background-color: var(--dark-gray);
+.img-container {
+  filter: brightness(0.6);
+  background-size: cover;
+  background-position: 50% 35%;
   display: flex;
   width: 100%;
   min-height: 35rem;
   max-height: 45rem;
+  animation: image-fade-in-out 20s ease-in-out infinite;
 }
 
 .labels {
@@ -382,19 +322,19 @@ body {
 .labels div {
   text-align: left;
   color: white;
+  text-shadow: -0.25rem 0.25rem 0.25rem var(--dark-gray);
   z-index: 1;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
-  animation: services-slide 15s ease-in-out infinite;
+  animation: text-slide 20s ease-in-out infinite;
 }
 
 .labels div h3 {
   color: white;
   font-size: 1.75rem;
   font-weight: 700;
-  text-shadow: 0 0 0.125rem black;
 }
 
 .labels div p {
@@ -402,7 +342,6 @@ body {
   padding: 1rem 0 3rem 0;
   width: 85%;
   font-size: 1rem;
-  text-shadow: 0 0 0.125rem black;
 }
 
 .labels div button {
@@ -414,14 +353,6 @@ body {
   border-radius: 2rem;
   font-size: 1.125rem;
   font-weight: 700;
-}
-
-.services figure img {
-  filter: brightness(0.4);
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  animation: services-fade 15s ease-in-out infinite;
 }
 
 .services-container h4 {
@@ -645,12 +576,8 @@ body {
     font-size: 2.5rem;
   }
 
-  .services figure {
+  .img-container {
     max-height: 40rem;
-  }
-
-  .services figure img {
-    object-position: 0 30%;
   }
 
   .labels {
