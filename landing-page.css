@@ -499,6 +499,23 @@ body {
     height: 2.1875rem;
   }
 
+  .introduction-container {
+    padding-top: 3rem;
+  }
+
+  .main-image {
+    max-height: 30rem;
+  }
+
+  .find-btns {
+    flex-direction: row;
+    gap: 2rem;
+  }
+
+  .find-btn {
+    font-size: 1.25rem;
+  }
+
   .services-container h4 {
     padding-top: 2rem;
     font-size: 1.5rem;
