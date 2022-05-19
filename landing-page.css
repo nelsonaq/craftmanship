@@ -630,9 +630,9 @@ body {
   }
 
   .main-image {
-    top: 0%;
-    right: -12%;
-    width: 77%;
+    top: 12%;
+    right: -10%;
+    width: 80%;
     max-height: 50rem;
   }
 
